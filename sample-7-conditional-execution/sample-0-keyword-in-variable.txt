@@ -1,0 +1,8 @@
+*** Settings ***
+
+*** Variables ***
+${MY_LOGGING_KEYWORD}=   Log
+
+*** Test Cases ***
+Run Keyword From Variable Sample
+    Run Keyword    ${MY_LOGGING_KEYWORD}    Test

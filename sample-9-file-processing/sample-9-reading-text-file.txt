@@ -1,0 +1,10 @@
+*** Settings ***
+Library           OperatingSystem
+
+*** Variables ***
+
+*** Test Cases ***
+Process Data File
+    [Tags]    file-reading
+    ${FILE_CONTENT}=   Get File    testdata.csv
+    Log    File Content: ${FILE_CONTENT}

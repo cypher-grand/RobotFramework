@@ -1,0 +1,21 @@
+*** Settings ***
+Library           Collections
+
+*** Variables ***
+@{MY_SIMPLE_LIST}=  Star Trek   Star Wars   Battleship Galactica
+
+*** Test Cases ***
+Check List Test
+  List Should Contain Value   ${MY_SIMPLE_LIST}   Star Wars
+  List Should Not Contain Duplicates   ${MY_SIMPLE_LIST}
+
+Process List Test
+  ${ELEMENT}=   Remove from List   ${MY_SIMPLE_LIST}   0
+  Should be equal   ${ELEMENT}   Star Trek
+
+Further Process List Test
+  ${NUM}=  Get Length  ${MY_SIMPLE_LIST}
+  Should be Equal as Integers  ${NUM}  2
+  Append To List   ${MY_SIMPLE_LIST}   Space 2063
+  @{TEMP_LIST}=  Create List   Star Wars   Space 2063
+  List should contain Sub List   ${MY_SIMPLE_LIST}   ${TEMP_LIST}

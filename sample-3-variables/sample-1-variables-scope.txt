@@ -1,0 +1,14 @@
+*** Settings ***
+Library     String
+
+*** Variables ***
+${TEST_URL}=   http://www.codecentric.de
+
+*** Test Cases ***
+Robot Framework Variables Demo
+  Log   Processing URL ${TEST_URL}
+  ${TEST_URL}=   Get Substring    ${TEST_URL}   7
+  Log   Resulting URL ${TEST_URL}
+
+Robot Framework Variable Unchanged
+  Log   Unchanged URL ${TEST_URL}

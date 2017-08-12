@@ -1,0 +1,17 @@
+*** Settings ***
+
+*** Test Cases ***
+Test Robot Framework Logging 1
+    [Setup]    Setup Actions
+    Log    Test Logging 1
+    [Teardown]    Teardown Actions
+
+Test Robot Framework Logging 2
+    Log    Test Logging 2
+
+*** Keywords ***
+Setup Actions
+    Log    Setup Actions done here
+
+Teardown Actions
+    Log    Teardown Actions done here

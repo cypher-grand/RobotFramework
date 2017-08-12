@@ -1,0 +1,10 @@
+*** Settings ***
+Library           Remote   http://localhost:8270
+
+Suite Setup       Connect To Database	   org.postgresql.Driver	  jdbc:postgresql://localhost:5432/liquibasedemo	  liquibasedemo   liquibasedemo
+Suite Teardown    Disconnect From Database
+
+
+*** Test Cases ***
+Test Database
+  Table Must Exist   liquibase_test

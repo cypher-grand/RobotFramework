@@ -1,0 +1,8 @@
+*** Settings ***
+
+*** Test Cases ***
+Run Keyword If Sample
+    ${TYPE}=    Set Variable    V2
+    Run Keyword If    '${TYPE}' == 'V1'    Log    Testing Variant 1
+    Run Keyword If    '${TYPE}' == 'V2'    Log    Testing Variant 2
+    Run Keyword If    '${TYPE}' == 'V3'    Log    Testing Variant 3

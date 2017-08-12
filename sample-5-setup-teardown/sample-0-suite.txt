@@ -1,0 +1,14 @@
+*** Settings ***
+Suite Setup       Setup Actions
+Suite Teardown    Teardown Actions
+
+*** Test Cases ***
+Test Robot Framework Logging
+    Log    Test Logging
+
+*** Keywords ***
+Setup Actions
+    Log    Setup Actions done here
+
+Teardown Actions
+    Log    Teardown Actions done here

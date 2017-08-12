@@ -1,0 +1,9 @@
+*** Settings ***
+
+
+*** Variables ***
+${TEST_URL}=   http://www.codecentric.de
+
+*** Test Cases ***
+Robot Framework Variables Demo
+  Log   Opening URL ${TEST_URL}

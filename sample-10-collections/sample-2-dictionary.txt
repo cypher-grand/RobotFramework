@@ -1,0 +1,13 @@
+*** Settings ***
+Library           Collections
+
+*** Test Cases ***
+Dictionary Test
+    &{MOVIE_CATEGORY_SAMPLE}=  Create Dictionary	 action=Die Hard  scifi=Star Trek
+    ${NUM}=  Get Length  ${MOVIE_CATEGORY_SAMPLE}
+    Should be Equal as Integers  ${NUM}  2
+
+Check Elements Test
+    &{MOVIE_CATEGORY_SAMPLE}=  Create Dictionary	 action=Die Hard  scifi=Star Trek
+    Dictionary Should Contain Value  ${MOVIE_CATEGORY_SAMPLE}   Die Hard
+    Dictionary Should Contain Key    ${MOVIE_CATEGORY_SAMPLE}   scifi

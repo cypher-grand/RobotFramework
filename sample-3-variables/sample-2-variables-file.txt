@@ -1,0 +1,6 @@
+*** Settings ***
+
+
+*** Test Cases ***
+Robot Framework Variables Demo
+  Log   Opening URL ${BASE_URL}

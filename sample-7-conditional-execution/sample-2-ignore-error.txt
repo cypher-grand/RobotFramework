@@ -1,0 +1,7 @@
+*** Settings ***
+
+*** Test Cases ***
+Run Keyword And Ignore Error Sample
+    @{CAPTAINS}    Create List    Picard    Kirk    Archer
+    Run Keyword And Ignore Error    Should Be Empty    ${CAPTAINS}
+    Log    Reached this point despite of error

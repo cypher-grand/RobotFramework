@@ -1,0 +1,21 @@
+*** Settings ***
+Library           OperatingSystem
+Library           String
+Library           Collections
+
+*** Variables ***
+
+*** Test Cases ***
+Process Data File
+    [Tags]    file-reading
+    ${FILE_CONTENT}=   Get File    testdata.csv
+    Log    File Content: ${FILE_CONTENT}
+    @{LINES}=   Split to Lines and Remove Header   ${FILE_CONTENT}
+    Log    ${LINES}
+
+*** Keywords ***
+Split to Lines and Remove Header
+    [Arguments]    ${FILE_CONTENT}
+    @{LINES}=    Split To Lines    ${FILE_CONTENT}
+    Remove From List    ${LINES}    0
+    [Return]    @{LINES}

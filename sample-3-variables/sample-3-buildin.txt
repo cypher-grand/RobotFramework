@@ -1,0 +1,9 @@
+*** Settings ***
+Library     String
+
+*** Variables ***
+${TEST_URL}=   http://www.codecentric.de
+
+*** Test Cases ***
+Robot Framework Variables Buildin
+  Log   Opening URL ${SPACE*5} ${TEST_URL}

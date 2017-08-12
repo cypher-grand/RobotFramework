@@ -1,0 +1,17 @@
+*** Settings ***
+Library           Collections
+
+*** Test Cases ***
+Check Element Number
+    @{MY_SIMPLE_LIST}=  Create List   Star Trek   Star Wars   Battleship Galactica
+    ${NUM}=  Get Length  ${MY_SIMPLE_LIST}
+    Should be Equal as Integers  ${NUM}  3
+    Demo Keyword    Star Trek   Star Wars   Battleship Galactica
+    Demo Keyword    @{MY_SIMPLE_LIST}
+
+*** Keywords ***
+Demo Keyword
+    [Arguments]   ${NAME_1}   ${NAME_2}   ${NAME_3}
+    Log Many   "Name 1:"    ${NAME_1}
+    Log Many   "Name 2:"    ${NAME_2}
+    Log Many   "Name 3:"    ${NAME_3}
