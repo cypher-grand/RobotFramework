@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170812 18:00:17.029" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\Users\XPS 1530\Desktop\login\tests" id="s1" name="Tests">
+<suite source="C:\Users\XPS 1530\Desktop\login\tests\login.robot" id="s1-s1" name="Login">
+<kw type="setup" name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${ROOT}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20170812 18:00:17.264" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/'</msg>
+<status status="PASS" endtime="20170812 18:00:23.606" starttime="20170812 18:00:17.264"></status>
+</kw>
+<test id="s1-s1-t1" name="Valid Login">
+<kw type="setup" name="Go To Page" library="PageObjectLibrary">
+<tags>
+<tag>page-object</tag>
+<tag>selenium</tag>
+</tags>
+<doc>Go to the url for the given page object</doc>
+<arguments>
+<arg>LoginPage</arg>
+</arguments>
+<msg timestamp="20170812 18:00:23.683" level="INFO">Opening url 'https://the-internet.herokuapp.com/login'</msg>
+<status status="PASS" endtime="20170812 18:00:24.266" starttime="20170812 18:00:23.631"></status>
+</kw>
+<kw name="Enter Username" library="LoginPage">
+<doc>Type the given text into the username field</doc>
+<arguments>
+<arg>tomsmith</arg>
+</arguments>
+<msg timestamp="20170812 18:00:24.268" level="INFO">Typing text 'tomsmith' into text field 'id=username'</msg>
+<status status="PASS" endtime="20170812 18:00:24.474" starttime="20170812 18:00:24.268"></status>
+</kw>
+<kw name="Enter Password" library="LoginPage">
+<doc>Type the given text into the password field</doc>
+<arguments>
+<arg>SuperSecretPassword!</arg>
+</arguments>
+<msg timestamp="20170812 18:00:24.476" level="INFO">Typing text 'SuperSecretPassword!' into text field 'id=password'</msg>
+<status status="PASS" endtime="20170812 18:00:24.743" starttime="20170812 18:00:24.475"></status>
+</kw>
+<kw name="Click The Login Button" library="LoginPage">
+<doc>Clicks the submit button on the form</doc>
+<status status="PASS" endtime="20170812 18:00:25.164" starttime="20170812 18:00:24.744"></status>
+</kw>
+<kw name="The Current Page Should Be" library="PageObjectLibrary">
+<doc>Fails if the name of the current page is not the given page name</doc>
+<arguments>
+<arg>SecureAreaPage</arg>
+</arguments>
+<status status="PASS" endtime="20170812 18:00:25.175" starttime="20170812 18:00:25.165"></status>
+</kw>
+<doc>Verify that we can successfully log in to the internet</doc>
+<status status="PASS" endtime="20170812 18:00:25.175" critical="yes" starttime="20170812 18:00:23.606"></status>
+</test>
+<kw type="teardown" name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20170812 18:00:28.373" starttime="20170812 18:00:25.177"></status>
+</kw>
+<status status="PASS" endtime="20170812 18:00:28.373" starttime="20170812 18:00:17.076"></status>
+</suite>
+<status status="PASS" endtime="20170812 18:00:28.373" starttime="20170812 18:00:17.045"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Tests" pass="1">Tests</stat>
+<stat fail="0" id="s1-s1" name="Login" pass="1">Tests.Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
