@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170815 18:46:34.097" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\Users\XPS 1530\Desktop\Test Tools\Robot Framework\Interview\registration.robot" id="s1" name="Registration">
+<test id="s1-t1" name="Valid Login">
+<kw name="Open Browser To Home Page" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${HOME_URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20170815 18:46:36.456" level="INFO">Opening browser 'chrome' to base url 'http://newtours.demoaut.com/'</msg>
+<status status="PASS" endtime="20170815 18:46:43.259" starttime="20170815 18:46:36.441"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20170815 18:46:44.407" starttime="20170815 18:46:43.260"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20170815 18:46:44.409" starttime="20170815 18:46:44.408"></status>
+</kw>
+<kw name="Home Page Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>${HOME_TITLE}</arg>
+</arguments>
+<msg timestamp="20170815 18:46:44.428" level="INFO">Page title is 'Welcome: Mercury Tours'.</msg>
+<status status="PASS" endtime="20170815 18:46:44.429" starttime="20170815 18:46:44.409"></status>
+</kw>
+<status status="PASS" endtime="20170815 18:46:44.429" starttime="20170815 18:46:44.409"></status>
+</kw>
+<status status="PASS" endtime="20170815 18:46:44.429" starttime="20170815 18:46:36.441"></status>
+</kw>
+<kw name="Go To Home Page" library="resource">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${HOME_URL}</arg>
+</arguments>
+<msg timestamp="20170815 18:46:44.432" level="INFO">Opening url 'http://newtours.demoaut.com/'</msg>
+<status status="PASS" endtime="20170815 18:46:44.687" starttime="20170815 18:46:44.432"></status>
+</kw>
+<kw name="Home Page Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>${HOME_TITLE}</arg>
+</arguments>
+<msg timestamp="20170815 18:46:44.705" level="INFO">Page title is 'Welcome: Mercury Tours'.</msg>
+<status status="PASS" endtime="20170815 18:46:44.706" starttime="20170815 18:46:44.687"></status>
+</kw>
+<status status="PASS" endtime="20170815 18:46:44.706" starttime="20170815 18:46:44.687"></status>
+</kw>
+<status status="PASS" endtime="20170815 18:46:44.706" starttime="20170815 18:46:44.431"></status>
+</kw>
+<kw name="Home Page Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>${HOME_TITLE}</arg>
+</arguments>
+<msg timestamp="20170815 18:46:44.719" level="INFO">Page title is 'Welcome: Mercury Tours'.</msg>
+<status status="PASS" endtime="20170815 18:46:44.719" starttime="20170815 18:46:44.709"></status>
+</kw>
+<status status="PASS" endtime="20170815 18:46:44.719" starttime="20170815 18:46:44.708"></status>
+</kw>
+<kw name="Go To Register Page" library="resource">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${REGISTER_URL}</arg>
+</arguments>
+<msg timestamp="20170815 18:46:44.721" level="INFO">Opening url 'http://newtours.demoaut.com/mercuryregister.php'</msg>
+<status status="PASS" endtime="20170815 18:46:44.996" starttime="20170815 18:46:44.720"></status>
+</kw>
+<kw name="Register Page Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>${REGISTRATION_TITLE}</arg>
+</arguments>
+<msg timestamp="20170815 18:46:45.008" level="INFO">Page title is 'Register: Mercury Tours'.</msg>
+<status status="PASS" endtime="20170815 18:46:45.008" starttime="20170815 18:46:44.997"></status>
+</kw>
+<status status="PASS" endtime="20170815 18:46:45.008" starttime="20170815 18:46:44.996"></status>
+</kw>
+<status status="PASS" endtime="20170815 18:46:45.008" starttime="20170815 18:46:44.720"></status>
+</kw>
+<kw name="Register Page Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>${REGISTRATION_TITLE}</arg>
+</arguments>
+<msg timestamp="20170815 18:46:45.019" level="INFO">Page title is 'Register: Mercury Tours'.</msg>
+<status status="PASS" endtime="20170815 18:46:45.019" starttime="20170815 18:46:45.011"></status>
+</kw>
+<status status="PASS" endtime="20170815 18:46:45.019" starttime="20170815 18:46:45.010"></status>
+</kw>
+<kw name="Input Firstname" library="resource">
+<arguments>
+<arg>${FIRSTNAME}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=firstName</arg>
+<arg>${FIRSTNAME}</arg>
+</arguments>
+<msg timestamp="20170815 18:46:45.021" level="INFO">Typing text 'John' into text field 'name=firstName'</msg>
+<status status="PASS" endtime="20170815 18:46:45.252" starttime="20170815 18:46:45.021"></status>
+</kw>
+<status status="PASS" endtime="20170815 18:46:45.252" starttime="20170815 18:46:45.020"></status>
+</kw>
+<kw name="Input Lastname" library="resource">
+<arguments>
+<arg>${LASTNAME}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=lastName</arg>
+<arg>${LASTNAME}</arg>
+</arguments>
+<msg timestamp="20170815 18:46:45.255" level="INFO">Typing text 'Doe' into text field 'name=lastName'</msg>
+<status status="PASS" endtime="20170815 18:46:45.445" starttime="20170815 18:46:45.255"></status>
+</kw>
+<status status="PASS" endtime="20170815 18:46:45.445" starttime="20170815 18:46:45.254"></status>
+</kw>
+<kw name="Input Phone" library="resource">
+<arguments>
+<arg>${PHONE}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=phone</arg>
+<arg>${PHONE}</arg>
+</arguments>
+<msg timestamp="20170815 18:46:45.448" level="INFO">Typing text '512.555.1234' into text field 'name=phone'</msg>
+<status status="PASS" endtime="20170815 18:46:45.729" starttime="20170815 18:46:45.448"></status>
+</kw>
+<status status="PASS" endtime="20170815 18:46:45.729" starttime="20170815 18:46:45.447"></status>
+</kw>
+<kw name="Input Username" library="resource">
+<arguments>
+<arg>${USERNAME}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=userName</arg>
+<arg>${USERNAME}</arg>
+</arguments>
+<msg timestamp="20170815 18:46:45.731" level="INFO">Typing text 'test@noemail.com' into text field 'name=userName'</msg>
+<status status="PASS" endtime="20170815 18:46:46.097" starttime="20170815 18:46:45.731"></status>
+</kw>
+<status status="PASS" endtime="20170815 18:46:46.097" starttime="20170815 18:46:45.730"></status>
+</kw>
+<kw name="Input Address1" library="resource">
+<arguments>
+<arg>${ADDRESS1}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=address1</arg>
+<arg>${ADDRESS1}</arg>
+</arguments>
+<msg timestamp="20170815 18:46:46.100" level="INFO">Typing text '123 Main Street' into text field 'name=address1'</msg>
+<status status="PASS" endtime="20170815 18:46:46.465" starttime="20170815 18:46:46.100"></status>
+</kw>
+<status status="PASS" endtime="20170815 18:46:46.466" starttime="20170815 18:46:46.099"></status>
+</kw>
+<kw name="Input Address2" library="resource">
+<arguments>
+<arg>${ADDRESS2}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=address2</arg>
+<arg>${ADDRESS2}</arg>
+</arguments>
+<msg timestamp="20170815 18:46:46.469" level="INFO">Typing text 'Apt 123' into text field 'name=address2'</msg>
+<status status="PASS" endtime="20170815 18:46:46.730" starttime="20170815 18:46:46.469"></status>
+</kw>
+<status status="PASS" endtime="20170815 18:46:46.730" starttime="20170815 18:46:46.468"></status>
+</kw>
+<kw name="Input City" library="resource">
+<arguments>
+<arg>${CITY}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=city</arg>
+<arg>${CITY}</arg>
+</arguments>
+<msg timestamp="20170815 18:46:46.734" level="INFO">Typing text 'Austin' into text field 'name=city'</msg>
+<status status="PASS" endtime="20170815 18:46:46.973" starttime="20170815 18:46:46.733"></status>
+</kw>
+<status status="PASS" endtime="20170815 18:46:46.973" starttime="20170815 18:46:46.732"></status>
+</kw>
+<kw name="Input State" library="resource">
+<arguments>
+<arg>${STATE}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=state</arg>
+<arg>${STATE}</arg>
+</arguments>
+<msg timestamp="20170815 18:46:46.978" level="INFO">Typing text 'Texas' into text field 'name=state'</msg>
+<status status="PASS" endtime="20170815 18:46:47.186" starttime="20170815 18:46:46.978"></status>
+</kw>
+<status status="PASS" endtime="20170815 18:46:47.186" starttime="20170815 18:46:46.977"></status>
+</kw>
+<kw name="Input Postalcode" library="resource">
+<arguments>
+<arg>${POSTALCODE}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=postalCode</arg>
+<arg>${POSTALCODE}</arg>
+</arguments>
+<msg timestamp="20170815 18:46:47.190" level="INFO">Typing text '78701' into text field 'name=postalCode'</msg>
+<status status="PASS" endtime="20170815 18:46:47.410" starttime="20170815 18:46:47.189"></status>
+</kw>
+<status status="PASS" endtime="20170815 18:46:47.411" starttime="20170815 18:46:47.188"></status>
+</kw>
+<kw name="Input Email" library="resource">
+<arguments>
+<arg>${EMAIL}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=email</arg>
+<arg>${EMAIL}</arg>
+</arguments>
+<msg timestamp="20170815 18:46:47.414" level="INFO">Typing text 'test@noemail.com' into text field 'name=email'</msg>
+<status status="PASS" endtime="20170815 18:46:47.768" starttime="20170815 18:46:47.414"></status>
+</kw>
+<status status="PASS" endtime="20170815 18:46:47.768" starttime="20170815 18:46:47.413"></status>
+</kw>
+<kw name="Input Password" library="resource">
+<arguments>
+<arg>${PASSWORD}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=password</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20170815 18:46:47.771" level="INFO">Typing text 'test123' into text field 'name=password'</msg>
+<status status="PASS" endtime="20170815 18:46:47.979" starttime="20170815 18:46:47.771"></status>
+</kw>
+<status status="PASS" endtime="20170815 18:46:47.979" starttime="20170815 18:46:47.770"></status>
+</kw>
+<kw name="Input Confirm Password" library="resource">
+<arguments>
+<arg>{CONFIRM_PASSWORD}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=confirmPassword</arg>
+<arg>${CONFIRM_PASSWORD}</arg>
+</arguments>
+<msg timestamp="20170815 18:46:47.984" level="INFO">Typing text '{CONFIRM_PASSWORD}' into text field 'name=confirmPassword'</msg>
+<status status="PASS" endtime="20170815 18:46:48.273" starttime="20170815 18:46:47.983"></status>
+</kw>
+<status status="PASS" endtime="20170815 18:46:48.273" starttime="20170815 18:46:47.983"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>register</arg>
+</arguments>
+<msg timestamp="20170815 18:46:48.278" level="INFO">Clicking button 'register'.</msg>
+<status status="PASS" endtime="20170815 18:46:49.335" starttime="20170815 18:46:48.277"></status>
+</kw>
+<status status="PASS" endtime="20170815 18:46:49.335" starttime="20170815 18:46:48.277"></status>
+</kw>
+<kw name="Welcome Page Should Be Open" library="resource">
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>${REGISTER_SUCCESS_URL}</arg>
+</arguments>
+<msg timestamp="20170815 18:46:49.355" level="INFO">Current location is 'http://newtours.demoaut.com/create_account_success.php'.</msg>
+<status status="PASS" endtime="20170815 18:46:49.355" starttime="20170815 18:46:49.337"></status>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>${REGISTRATION_TITLE}</arg>
+</arguments>
+<msg timestamp="20170815 18:46:49.368" level="INFO">Page title is 'Register: Mercury Tours'.</msg>
+<status status="PASS" endtime="20170815 18:46:49.369" starttime="20170815 18:46:49.355"></status>
+</kw>
+<status status="PASS" endtime="20170815 18:46:49.369" starttime="20170815 18:46:49.336"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170815 18:46:52.598" starttime="20170815 18:46:49.370"></status>
+</kw>
+<status status="PASS" endtime="20170815 18:46:52.598" critical="yes" starttime="20170815 18:46:36.441"></status>
+</test>
+<doc>A variable driven test case to register a new user
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="PASS" endtime="20170815 18:46:52.598" starttime="20170815 18:46:34.113"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Registration" pass="1">Registration</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
