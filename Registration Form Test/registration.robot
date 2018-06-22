@@ -40,7 +40,7 @@ Valid Login
    
 	Input Password     ${PASSWORD}
     
-	Input Confirm Password    {CONFIRM_PASSWORD}
+	Input Confirm Password    ${CONFIRM_PASSWORD}
    
 	Submit Credentials
 
